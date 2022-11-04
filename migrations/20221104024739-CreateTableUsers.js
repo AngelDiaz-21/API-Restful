@@ -14,8 +14,8 @@ module.exports = {
         unique: true
       },
       password: Sequelize.STRING,
-      createAt: Sequelize.DATE,
-      updateAt: Sequelize.DATE
+      createdAt: Sequelize.DATE,
+      updatedAt: Sequelize.DATE
     })
   },
 
