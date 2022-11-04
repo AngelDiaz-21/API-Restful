@@ -8,6 +8,8 @@ app.get('/', (request, response) => {
     response.send('<h1>MI API</h1>')
 });
 
+app.use('/api', require('./routes'));
+
 app.listen(PORT, () => {
     console.log(`Running on ${PORT}`);
 });
