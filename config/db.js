@@ -10,7 +10,7 @@ const orderModel = require('../models/order')
 const sequelize = new Sequelize(
     'sesion6',
     'root',
-    'Nextapple18',
+    'Nextapple18@',
     {
         host: 'localhost',
         dialect: 'mysql',
