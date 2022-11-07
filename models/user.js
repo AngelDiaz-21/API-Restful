@@ -13,8 +13,8 @@ module.exports = (sequelize) => {
         unique: true
         },
         password: DataTypes.STRING,
-        createAt: DataTypes.DATE,
-        updateAt: DataTypes.DATE
+        createdAt: DataTypes.DATE,
+        updatedAt: DataTypes.DATE
 }, {
 });
 
