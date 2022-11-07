@@ -20,8 +20,8 @@ module.exports = (sequelize) => sequelize.define('orders', {
     onDelete: 'CASCADE'
     },
     numberOfProductsAdded: Sequelize.INTEGER,
-    createAt: Sequelize.DATE,
-    updateAt: Sequelize.DATE
+    createdAt: Sequelize.DATE,
+    updatedAt: Sequelize.DATE
 }, {
     hooks: {
         beforeCreate: function (review, options) {
