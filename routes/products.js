@@ -1,9 +1,10 @@
 const express = require ('express');
 const router = express.Router();
 const sequelize = require('../config/db');
+const permission = require ('../middlewares/permission');
 
 // * Get all products
-router.get('/', async (request, response) => {
+router.get('/', permission('admin', 'cliente'), async (request, response) => {
     return await sequelize.models.products.findAndCountAll()
         .then(data => response.json(data))
         .catch(err => response.json({ message: 'Error', data: err}));
