@@ -1,8 +1,8 @@
+require('dotenv').config()
 const express = require ('express');
 const helmet = require ('helmet');
 const cors = require ('cors');
 const app = express();
-const PORT = 8080;
 app.use(helmet());
 app.use(cors());
 app.use(express.urlencoded({ extended: true }))
@@ -14,6 +14,6 @@ app.get('/', (request, response) => {
 
 app.use('/api', require('./routes'));//Toma de referencia el archivo index
 
-app.listen(PORT, () => {
-    console.log(`Running on ${PORT}`);
+app.listen(process.env.PORT, () => {
+    console.log(`Running on ${process.env.PORT}`);
 });
