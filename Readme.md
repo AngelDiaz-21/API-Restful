@@ -1,4 +1,4 @@
-# Sesión 6: Desarrollo de API Restful l
+# Desarrollo de API Restful
 
 Objetivo: 
 * Desarrollar una API
